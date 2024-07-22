@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Link import 추가
 import './Main.css';
-import backgroundImage from '../assets/pexels-jeswinthomas-1007425.jpg';
 
 const articles = [
   {
@@ -60,7 +59,7 @@ function Main() {
 
   return (
     <div className="header">
-      <img className="main_image" src={backgroundImage} alt="main_image" />
+      <img className="main_image" src={"https://images.pexels.com/photos/1007425/pexels-photo-1007425.jpeg"} alt="main_image" />
       <div className="overlay_text">
         <div className='bar'>
           <h3 onClick={() => handleScroll(0)}>Home</h3>
