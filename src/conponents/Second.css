@@ -1,0 +1,46 @@
+/* Second.css */
+.container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .left {
+    background-color: #ffffff;
+    cursor: url('/src/assets/left-arrow.png'), auto;
+}
+  
+  .right {
+    background-color: #ffffff;
+    cursor: url('/src/assets/right-arrow.png'), auto;
+}
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .overlay.message {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: normal;
+    color: #ff0000;
+  }
